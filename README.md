@@ -14,6 +14,6 @@ REACT:
 Songbird: https://nifty-wozniak-bad92a.netlify.app/  
 Theatre directors: https://theatre-directors.netlify.app/  
 - 🌞 Also I have production experience in Front-End.
-Here is link on website, that I've created: https://sonyashnyk.com.ua/
+Here is link on website, that I've created: https://sonyashnyk.com.ua/  
 And link on code for this page: https://github.com/Katsiaryna31/Sunflower.git.
 - 📫 I am glad to any collaborations. The best ways to reach me: katia310790@gmail.com or +375298229856.
