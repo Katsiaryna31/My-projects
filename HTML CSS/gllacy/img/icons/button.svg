@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="86.938" height="32" viewBox="0 0 86.938 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f8f7f4;
+        fill-opacity: 0.99;
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="366" y="501" width="86.938" height="32" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#ededed"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+      <feGaussianBlur result="blur" stdDeviation="1" in="SourceAlpha"/>
+      <feFlood result="flood-2" flood-color="#696969"/>
+      <feComposite result="composite-2" operator="out" in2="blur"/>
+      <feOffset result="offset" dy="2"/>
+      <feComposite result="composite-3" operator="in" in2="SourceAlpha"/>
+      <feBlend result="blend-2" in2="blend"/>
+    </filter>
+  </defs>
+  <path id="Shape_117_copy" data-name="Shape 117 copy" class="cls-1" d="M382,501h54.933a16,16,0,0,1,0,32H382A16,16,0,0,1,382,501Z" transform="translate(-366 -501)"/>
+</svg>

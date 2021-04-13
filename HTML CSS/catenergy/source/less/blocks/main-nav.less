@@ -1,0 +1,132 @@
+.main-nav {
+  .zero-space ();
+  margin-bottom: 0;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  position: relative;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: -29px;
+  right: 0;
+  z-index: 2;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  border: none;
+  background-color: #ffffff;
+}
+
+.main-nav--closed .main-nav__hamburger-line {
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background-color: #111111;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background-color: #111111;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background-color: #111111;
+  }
+}
+
+.main-nav--opened .main-nav__hamburger-line {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  background-color: #111111;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background-color: #111111;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background-color: #111111;
+    transform: rotate(-45deg);
+  }
+}
+
+.main-nav--closed .main-nav__list {
+  display: none;
+}
+
+.main-nav__wrapper {
+  display: block;
+}
+
+.main-nav__list {
+  padding: 0;
+  display: block;
+  width: auto;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    margin-top: 42px;
+    margin-left: auto;
+  }
+
+  .main-nav--closed .main-nav__list {
+    display: flex;
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    margin-left: auto;
+  }
+
+  .main-nav__wrapper {
+    display: flex;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav {
+    margin-right: -15px;
+    font-size: 20px;
+    line-height: 25px;
+    color: #ffffff;
+  }
+}

@@ -1,0 +1,275 @@
+body {
+    margin: 0 auto;
+    max-width: 1400px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.container {
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 10px 20px 10px;
+    background-color: grey;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.buttons__main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 500px;
+    align-items: center;
+}
+
+.buttons__update,
+.temperature__fahrenheit,
+.temperature__celsius {
+    background: rgb(166, 192, 231);
+    border: none;
+    border-radius: 15px;
+    height: 50px;
+    width: 50px;
+    color: #ffffff;
+}
+
+button:hover {
+    background: rgb(35,61,117);
+}
+
+.temperature--active {
+    background: rgb(35,61,117);
+}
+
+.language__list {
+    list-style: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.language__english,
+.language__russian,
+.language__belorussian {
+    background: rgb(166, 192, 231);
+    border: none;
+    height: 50px;
+    width: 50px;
+    color: #ffffff;
+}
+
+.language--active {
+    background: rgb(35,61,117);
+}
+
+.language__english {
+    border-radius: 15px 0 0 15px;
+    border-right: 1px solid rgb(35,61,117);
+}
+
+.language__russian {
+    border-left: 1px solid rgb(35,61,117);
+    border-right: 1px solid rgb(35,61,117);
+}
+
+.language__belorussian {
+    border-radius: 0 15px 15px 0;
+    border-left: 1px solid rgb(35,61,117);
+}
+
+.temperature__fahrenheit {
+    border-right: 1px solid rgb(35,61,117);
+    border-radius: 15px 0 0 15px;  
+}
+
+.temperature__celsius {
+    border-left: 1px solid rgb(35,61,117);
+    border-radius: 0 15px 15px 0;
+}
+
+.buttons__map {
+    display: flex;
+    align-items: center;
+}
+
+.buttons__map--input {
+    font-size: 15px;
+    height: 50px;
+    width: 250px;
+    padding-left: 8px;
+    border-radius: 15px 0 0 15px;
+    border: none;
+    border-right: 1px solid rgb(35,61,117);
+}
+
+.buttons__map--button {
+    background: rgb(166, 192, 231);
+    border: none;
+    border-left: 1px solid rgb(35,61,117);
+    border-radius: 0 15px 15px 0;
+    height: 50px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 0 5px;
+    margin-right: 20px;
+}
+
+.buttons__speech--button {
+    background: rgb(166, 192, 231);
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.buttons__speech--button:active {
+    background-color: indianred;
+    animation: shadow 1s infinite linear;
+}
+
+@keyframes shadow {
+    from {box-shadow: 0 0 0 0 rgba(35,61,117, 0.7);}
+    50% {box-shadow: 0 0 15px 15px  rgba(35,61,117, 0.5);}
+    to {box-shadow: 0 0 0 0 rgba(35,61,117, 0.7);}
+}
+
+.buttons__speech--button img {
+    width: 12.5px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.map {
+    display: flex;
+    flex-direction: column;
+}
+
+.map__location-current {
+    font-size: 80px;
+}
+
+.weather__date {
+    font-size: 50px;
+    color: #ffffff;
+}
+
+.weather {
+    flex-grow: 1;
+}
+
+.weather__today {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.weather__today-data {
+    text-transform: uppercase;
+}
+
+.weather__today-icon {
+    width: 150px;
+    height: 150px;
+}
+
+.weather__future-icon {
+    width: 80px;
+    height: 80px;
+}
+
+.weather__today-temperature {
+    font-size: 200px;
+    color: #ffffff;
+    width: 500px;
+    text-align: center;
+}
+
+.weather__future {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.weather__future--day {
+    padding: 60px 20px 20px;
+    width: 250px;
+}
+
+#map {  
+    width: 365px;
+    height: 365px;
+    border-radius: 25px;
+}
+
+.map__coordinates {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 580px) {
+    .container {
+        padding: 10px 5px;
+    }
+
+    .buttons__main {
+        width: 100%;
+    }
+    
+    .buttons__update,
+    .temperature__fahrenheit,
+    .temperature__celsius,
+    .language__english,
+    .language__russian,
+    .language__belorussian {
+        height: 40px;
+        width: 40px;
+    }
+
+    .map__location-current {
+        font-size: 50px;
+    }
+
+    .weather__date {
+        font-size: 30px;
+    }
+
+    .weather__today-temperature {
+        font-size: 100px;
+        width: 300px;
+    }
+
+    .buttons__map--input {
+        height: 40px;
+        width: auto;
+    }
+    
+    .buttons__map--button {
+        height: 40px;
+        font-size: 14px;
+        margin-right: 5px;
+    }
+    
+    .buttons__speech--button {
+        width: 40px;
+        height: 40px;   
+    }
+
+    #map {  
+        width: 300px;
+        height: 300px;
+    }
+
+}
