@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>simple-piskel-clone</title>
+<link href="app.css" rel="stylesheet"></head>
+
+<body>
+    <header>
+        <h1 class="page-name">Simple piskel</h1>
+    </header>
+    <main class="container">
+        <section class="panels">
+            <h2 class="panels__name visually-hidden">Panel</h2>
+            <div class="panel-instruments">
+                <div class="panel-elements">
+                    <div class="panel-elements__buttons">
+                        <div class="panel-elements__sizes" id='sizes'>
+                            <button class="panel-elements__size panel-elements__size1"></button>
+                            <button class="panel-elements__size panel-elements__size2"></button>
+                            <button class="panel-elements__size panel-elements__size3"></button>
+                            <button class="panel-elements__size panel-elements__size4"></button>
+                            <label class="panel-elements__sizes--label" for="sizes">Pen size from 1 to 4 pixels;
+                                <span>use '[' or ']' from keyboard</span></label>
+                        </div>
+                        <div class="panel-elements__wrapper">
+                            <button class="panel-elements__button panel-elements__pen" id="pen"></button>
+                            <label class="panel-elements__pen--label" for="pen">Pen tool <span>(P)</span></label>
+                        </div>
+                        <div class="panel-elements__wrapper">
+                            <button class="panel-elements__button panel-elements__bucket" id="bucket"></button>
+                            <label class="panel-elements__bucket--label" for="bucket">Paint bucket tool
+                                <span>(B)</span></label>
+                        </div>
+                        <div class="panel-elements__wrapper">
+                            <button class="panel-elements__button panel-elements__eraser" id="eraser"></button>
+                            <label class="panel-elements__eraser--label" for="eraser">Eraser tool
+                                <span>(E)</span></label>
+                        </div>
+                        <div class="panel-elements__wrapper">
+                            <button class="panel-elements__button panel-elements__same-color" id="sameColor"></button>
+                            <label class="panel-elements__same-color--label" for="bin">Paint all pixels of the same
+                                color <span>(A)</span></label>
+                        </div>
+                    </div>
+                    <div class="panel-elements__select">
+                        <div class="panel-elements__wrapper">
+                            <input type="color" value="#24a8c8" id="primary" class="panel-elements__primary-color"
+                                colorformat="rgba">
+                            <label class="panel-elements__primary-color--label" for="primary">Primary - left mouse
+                                button</label>
+                        </div>
+                        <div class="panel-elements__wrapper">
+                            <input type="color" value="#ffffff" id="secondary" class="panel-elements__secondary-color"
+                                colorformat="rgba">
+                            <label class="panel-elements__secondary-color--label" for="secondary">Secondary - right
+                                mouse
+                                button</label>
+                        </div>
+                        <div class="panel-elements__wrapper">
+                            <button class="panel-elements__change-color" id="changeColor"></button>
+                            <label class="panel-elements__change-color--label" for="changeColor">Change
+                                color<span>(D)</span></label>
+                        </div>
+                    </div>
+                    <div class="panel-elements__canvas-sizes" id='canvasSizes'>
+                        <button class="panel-elements__canvas-size panel-elements__canvas-size1">32x32</button>
+                        <button class="panel-elements__canvas-size panel-elements__canvas-size2">64x64</button>
+                        <button class="panel-elements__canvas-size panel-elements__canvas-size3">128x128</button>
+                        <label class="panel-elements__canvas-sizes--label" for="canvasSizes">Canvas size select <span>use '←' or '→' from keyboard</span></label>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-frames">
+                <ul class="frames__list">
+                </ul>
+                <button class="panel-frames__new">Add new frame</button>
+            </div>
+        </section>
+        <section class="canvas-container">
+            <h2 class="canvas-container__name visually-hidden">Canvas</h2>
+            <ul class="canvas__list">
+                <li class="canvas__item">
+                    <canvas class="canvas__main canvas__main--active" id='canvas1'></canvas>
+                </li>
+            </ul>
+        </section>
+        <section class="animation">
+            <h2 class="animation__name visually-hidden">Animation</h2>
+            <div class="animation__result">
+                <canvas class="animation__canvas" id="canvasAnimation"></canvas>
+                <button class="animation__full-screen"></button>
+            </div>
+            <div class="animation__range">
+                <input type="range" class="animation__range" id="range" name="FPS" min="1" max="24" step="1" value="12">
+                <span class="animation__current-value"></span>
+                <label class="animation__label" for="FPS">FPS</label>
+            </div>
+            <div class="animation__save">
+                <button class="animation__save-button animation__save-apng">Save animation as .apng file</button>
+                <button class="animation__save-button animation__save-gif">Save animation as .gif file</button>
+            </div>
+        </section>
+    </main>
+<script type="text/javascript" src="app.js"></script></body>
+
+</html>
