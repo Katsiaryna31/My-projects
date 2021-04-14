@@ -1,0 +1,137 @@
+.address {
+  background-color: #131313;
+  padding-bottom: 68px;
+  display: flex;
+  flex-direction: column;
+}
+
+.address__text,
+.address__text a {
+  font-family: $yeseva-one;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $main-background;
+  width: 580px;
+  margin: 0 auto;
+  padding: 52px 0 21px;
+  text-decoration: none;
+}
+
+.address__social {
+  margin: 0 auto;
+  width: 100px;
+  padding-bottom: 40px;
+
+}
+
+.social__email,
+.social__instagram {
+  margin-right: 12px;
+  display: inline-block;
+  background: $main-background;
+  border-radius: 50%;
+  &:hover {
+    background: #986C26;
+  }
+}
+
+.social__email {
+  width: 16px;
+  height: 13px;
+  padding: 7.5px 6px;
+}
+
+.social__instagram {
+  width: 14px;
+  height: 15px;
+  padding: 6.5px 7px;
+}
+
+.address__map {
+  position: relative;
+  width: 925px;
+  height: 465px;
+  margin: 0 auto;
+}
+
+.address__map picture {
+  position: absolute;
+}
+
+.address__map iframe {
+  position: absolute;
+}
+
+@media screen and (max-width: $medium-width) {
+  .address__map {
+    order: 1;
+    width: 340px;
+    height: 255px;
+  }
+
+  .address__map-image {
+    width: 340px;
+    height: 255px;
+  }
+
+  .address__map iframe {
+    width: 340px;
+    height: 255px;
+  }
+
+  .address__text {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: $mobile-width) {
+  .address {
+    padding: 0 18px 38px;
+  }
+
+  .address__text {
+    order: 2;
+  }
+
+  .address__text,
+  .address__text a {
+    font-size: 18px;
+    line-height: 25px;
+    width: auto;
+    margin: 0 auto;
+    padding: 42px 18px 23px;
+    text-decoration: none;
+  }
+
+
+  .address__social {
+    order: 3;
+    width: auto;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .social__email svg {
+    width: 19.5px;
+    height: 15.6px;
+  }
+
+  .social__instagram svg {
+    width: 16.7px;
+    height: 16.7px;
+  }
+
+  .social__email {
+    width: 19.5px;
+    height: 15.6px;
+    padding: 11.7px 9.75px;
+  }
+
+  .social__instagram {
+    width: 16.7px;
+    height: 16.7px;
+    padding: 11.5px;
+  }
+}

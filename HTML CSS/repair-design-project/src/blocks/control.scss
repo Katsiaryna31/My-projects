@@ -1,0 +1,232 @@
+.control {
+  height: auto;
+  background: linear-gradient(to bottom, #131313 0%, #131313 350px, #fff 350px, #fff 100%);
+}
+
+.control__header {
+  padding: 0;
+  padding-bottom: 80px;
+  width: 196px;
+  margin: 0 auto;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: $yeseva-one;
+  position: relative;
+  &::after {
+    content: "";
+    width: 114px;
+    height: 28px;
+    background: url(../assets/images/camera.svg);
+    position: absolute;
+    top: 45px;
+    left: 40px;
+  }
+}
+
+.control__video {
+  margin: 0 auto;
+  width: 817px;
+  height: 434px;
+  padding-bottom: 98.5px;
+}
+
+.control__video iframe {
+ width: 100%;
+ height: 100%;
+ border: none;
+}
+
+.control__description {
+  width: 47.29%;
+  padding-bottom: 86px;
+  text-align: center;
+  margin: 0 auto;
+  font-family: $futura-book;
+  font-size: 20px;
+  line-height: 34px;
+  color: #363636;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -34.46px;
+    left: 320px;
+    width: 55px;
+    height: 1.54px;
+    background: $main-background;
+  }
+}
+
+.control__request {
+  @include zero-space ();
+  display: block;
+  width: 53.4%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.control__main-form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.control__main-name label,
+.control__main-phone label {
+  font-family: $futura-book;
+  font-size: 15px;
+  line-height: 20px;
+  color: rgba(54, 54, 54, 0.5);
+}
+
+.control__main-name input,
+.control__main-phone input {
+  border: none;
+  border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+  margin-bottom: 20px;
+  font-family: $futura-book;
+  font-size: 18px;
+  line-height: 24px;
+  color: #363636;
+  background: transparent;
+  &::placeholder {
+    color: #363636;
+  }
+}
+
+.control__main-name,
+.control__main-phone {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.control__main-form input[type="submit"] {
+  font-family: $futura-demic;
+  font-size: 15px;
+  line-height: 26px;
+  text-transform: uppercase;
+  padding: 15px 75px;
+  color: #ffffff;
+  border: none;
+  background-color: $main-background;
+  margin-bottom: 33px;
+}
+
+.control__main-checkbox label {
+  font-family: $futura-book;
+  font-size: 16px;
+  line-height: 22px;
+  color: #181818;
+  text-align: center;
+}
+
+@media screen and (max-width: $medium-width) {
+  .control {
+    height: auto;
+    background: linear-gradient(to bottom, #131313 0%, #131313 200px, #fff 200px, #fff 100%);
+  }
+
+  .control__video {
+    margin: 0 auto;
+    width: 318px;
+    height: 207px;
+    padding-bottom: 45px;
+  }
+
+  .control__description {
+    width: auto;
+    padding: 0 18px 30px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #363636;
+    &::before {
+      top: -20px;
+      left: 145px;
+      width: 55px;
+      height: 1.54px;
+      background: $main-background;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile-width) {
+  .control {
+    padding: 0 18px;
+    background: linear-gradient(to bottom, #131313 0%, #131313 820px, #fff 820px, #fff 100%);
+    height: auto;
+  }
+
+  .control__header {
+    width: 224px;
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .control__video {
+    margin: 0 auto;
+    width: 318px;
+    height: 207px;
+    padding-bottom: 45px;
+  }
+
+  .control__video iframe {
+   width: 100%;
+   height: 100%;
+  }
+
+  .control__description {
+    color: #ffffff;
+  }
+
+  .control__request {
+    width: auto;
+    position: relative;
+  }
+
+
+  .control__main-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+
+  }
+
+  .control__main-name label,
+  .control__main-phone label {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .control__main-name input,
+  .control__main-phone input {
+    color: #ffffff;
+    margin-bottom: 55px;
+    &::placeholder {
+      color: #ffffff;
+    }
+  }
+
+  .control__main-form input[type="submit"] {
+    margin-top: 45px;
+  }
+
+  .control__main-checkbox {
+    position: absolute;
+    top: 170px;
+    color: #ffffff;
+    z-index: 2;
+  }
+
+  .control__main-checkbox label {
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
+    text-align: center;
+  }
+}

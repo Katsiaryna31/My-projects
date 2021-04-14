@@ -1,0 +1,47 @@
+.repair-types {
+  width: auto;
+  padding: 100px 100px 150px;
+}
+
+.repair-types__header {
+  @include zero-space ();
+  padding-bottom: 80px;
+  width: 196px;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #181818;
+  font-family: $yeseva-one;
+  position: relative;
+  &::after {
+    content: "";
+    width: 114px;
+    height: 28px;
+    background: url(../assets/images/repair.svg);
+    position: absolute;
+    top: 45px;
+    left: 40px;
+  }
+}
+
+@media screen and (max-width: $medium-width) {
+  .repair-types {
+    padding: 10px 18px 15px;
+  }
+}
+
+@media screen and (max-width: $mobile-width) {
+  .repair-types {
+    padding: 38px 18px;
+  }
+
+  .repair-types__header {
+    padding: 0;
+    padding-bottom: 80px;
+    width: 196px;
+    margin: 0 auto;
+    font-size: 22px;
+    line-height: 30px;
+  }
+}

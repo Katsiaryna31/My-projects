@@ -1,0 +1,205 @@
+.introduction {
+  max-width: $desktop-width;
+  @include zero-space ();
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.introduction__instagram {
+  width: 82px;
+  height: 707px;
+  background: #131313;
+  color: $main-background;
+}
+
+.introduction__instagram a {
+  display: block;
+  transform: rotate(90deg);
+  font-family: $futura-demic;
+  margin: 0;
+  padding:170px 0 0 250px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: $main-background;
+  text-decoration: none;
+  position: relative;
+}
+
+.introduction__instagram a::after {
+  content: "";
+  position: absolute;
+  background: $main-background;
+  width: 51px;
+  height: 1.5px;
+  bottom: 8px;;
+  right: -145px;
+}
+
+.introduction__block {
+  background: url(../assets/images/index-background.jpg);
+  flex-grow: 1;
+  height: auto;
+  background-size: cover;
+  padding-left: 60px;
+}
+
+.introduction__header {
+  color: #ffffff;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-family: $yeseva-one;
+  width: 42%;
+  margin: 0;
+  padding-top: 180px;
+  padding-bottom: 30px;
+}
+
+.introduction__header-city {
+  color: $main-background;
+}
+
+.introduction__info {
+  font-family: $futura-book;
+  color: #ffffff;
+  width: 35%;
+  font-size: 22px;
+  line-height: 30px;
+  padding-bottom: 40px;
+  padding-right: 18px;
+  margin: 0;
+}
+
+.introduction__buttons {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: auto;
+  padding-right: 18px;
+}
+
+.introduction__button-calculate {
+  display: block;
+  font-family: $futura-demic;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  padding: 17px 35px 17px 35px;
+  margin-right: 22px;
+  margin-bottom: 10px;
+  background: $main-background;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.introduction__button-submit {
+  display: block;
+  font-family:  $futura-demic;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 17px;
+  margin-bottom: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.scroll {
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: 0;
+  color: #ffffff;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: $yeseva-one;
+  padding: 34px 48px;
+  background: #131313;
+  margin-bottom: -47px;
+}
+
+.scroll__text {
+  position: relative;
+  padding-right: 40px;
+}
+
+.scroll__text::after {
+  content: "";
+  position: absolute;
+  background: url(../assets/images/scroll-button.svg);
+  width: 29px;
+  height: 29px;
+  top: -5px;
+  right: 0;
+}
+
+@media screen and (max-width: $medium-width) {
+  .introduction__header {
+    font-size: 20px;
+    padding-top: 40px;
+    width: auto;
+  }
+
+  .introduction__info {
+    width: auto;
+  }
+
+  .introduction__buttons {
+    width: auto;
+  }
+
+  .scroll {
+    display: none;
+  }
+}
+
+@media screen and (max-width: $mobile-width) {
+  .introduction {
+    max-width: $mobile-width;
+  }
+
+  .introduction__instagram {
+    display: none;
+  }
+
+  .introduction__block {
+    background: url(../assets/images/index-background.jpg);
+    background-position: center;
+    width: auto;
+    height: 476px;
+    background-size: cover;
+    padding: 0 18px;
+  }
+
+  .introduction__header {
+    font-size: 23px;
+    width: auto;
+    padding-top: 85px;
+  }
+
+  .introduction__info {
+    width: 90%;
+    font-size: 18px;
+    line-height: 24px;
+    padding-bottom: 29px;
+    margin: 0;
+  }
+
+  .introduction__buttons {
+    flex-direction: column;
+    justify-content: space-between;
+    width: auto;
+  }
+
+  .introduction__button-calculate {
+    margin-bottom: 25px;
+    margin-right: 0;
+  }
+}

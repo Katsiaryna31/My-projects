@@ -1,0 +1,242 @@
+.team {
+  background: linear-gradient(to bottom, #131313 0%, #131313 407px, #fff 407px, #fff 100%);
+  padding-bottom: 90px;
+}
+
+.team__header {
+  margin: 0 auto;
+  padding-bottom: 95px;
+  font-family: $yeseva-one;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 257px;
+  position: relative;
+  &::after {
+    content: "";
+    width: 114px;
+    height: 28px;
+    background: url(../assets/images/team.svg);
+    position: absolute;
+    top: 45px;
+    left: 75px;
+  }
+}
+
+.team__aim {
+  width: 460px;
+  margin: 0 auto;
+  font-family: $futura-book;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #ffffff;
+  padding-bottom: 38px;
+}
+
+.team__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.team__description {
+  width: 560px;
+  text-align: center;
+  margin: 0 auto;
+  font-family: $futura-book;
+  font-size: 20px;
+  line-height: 34px;
+  color: #363636;
+}
+
+.team__description--first {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 55px;
+    height: 2px;
+    background: $main-background;
+    top: -20px;
+    left: 280px;
+  }
+}
+
+.team__photos {
+  margin: 0 auto;
+  padding: 0 205px;
+}
+
+.team__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.person {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.person--manager {
+  position: relative;
+  &::before {
+    content:"";
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: -35px;
+    left: -35px;
+    background: $main-background;
+    box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.5);
+  }
+  &::after {
+    content:"";
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: -35px;
+    left: -35px;
+    background: url(../assets/images/manager.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.person--designer {
+  position: relative;
+  &::before {
+    content:"";
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: -35px;
+    left: -35px;
+    background: $main-background;
+    box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.5);
+  }
+  &::after {
+    content:"";
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: -35px;
+    left: -35px;
+    background: url(../assets/images/designer.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.person--foreman {
+  position: relative;
+  &::before {
+    content:"";
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: -35px;
+    left: -35px;
+    background: $main-background;
+    box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.5);
+  }
+  &::after {
+    content:"";
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: -35px;
+    left: -35px;
+    background: url(../assets/images/foreman.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.person-info {
+  order: 1;
+  width: 233px;
+  text-align: center;
+  background: #ffffff;
+  margin-top: -83px;
+}
+
+.person__name {
+  font-family: $yeseva-one;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #181818;
+  margin: 20px 0 5px;
+}
+
+.person__position {
+  margin: 0 0 24px;
+  padding: 0;
+  font-family: $futura-book;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: #959595;
+}
+
+.person__experience {
+  margin: 0;
+  padding: 13px 0;
+  background: $main-background;
+  font-family: $yeseva-one;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+@media screen and (max-width: $medium-width) {
+  .team__aim {
+    width: 90%;
+  }
+
+  .team__photos {
+    padding: 0 20px;
+  }
+
+  .team__description {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .team {
+    background: #131313;
+    padding-bottom: 0;
+  }
+
+  .team__aim {
+    width: auto;
+    margin: 0 auto;
+    padding: 0 18px 80px;
+    font-family: $futura-book;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .team__photos {
+    margin: 0 auto;
+    padding: 0 18px 0 13px;
+  }
+
+  .person__photo {
+    width: 304px;
+    height: 358px;
+  }
+
+  .team__description {
+    display: none;
+  }
+}

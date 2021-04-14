@@ -1,0 +1,144 @@
+.questions {
+  @include zero-space ();
+  background: linear-gradient(to bottom, #fff 0%, #fff 219px, #131313 219px, #131313 100%);
+}
+
+.questions-wrapper {
+  width: 62%;
+  margin: 0 auto;
+  background: #111111;
+}
+
+.questions__form {
+  display: flex;
+  flex-direction: column;
+  width: 58%;
+  margin: 0 auto;
+  padding-bottom: 34.4px;
+  position: relative;
+}
+
+.questions__form label {
+  font-family: $futura-book;
+  font-size: 15px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.questions__header {
+  @include zero-space ();
+  padding: 34.4px 0 50px;
+  font-family: $yeseva-one;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.questions__data {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 49px;
+}
+
+.questions__name,
+.questions__phone {
+  display: flex;
+  flex-direction: column;
+}
+
+.questions__name input,
+.questions__phone input{
+  font-family: $futura-book;
+  width: 231px;
+  border: none;
+  padding-top: 5px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  background: #111111;
+  &::placeholder {
+    color: #ffffff;
+  }
+}
+
+#Text-questions {
+  font-family: $futura-book;
+  width: auto;
+  border: none;
+  padding-top: 5px;
+  margin-bottom: 120px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  background: #111111;
+  &::placeholder {
+    color: #ffffff;
+  }
+}
+
+.questions__main-checkbox {
+  position: absolute;
+  top: 180px;
+  left: 140px;
+}
+
+.questions__form input[type="submit"] {
+  margin: 0 auto;
+  padding: 13px 74px;
+  font-family: $futura-demic;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border: none;
+  background: $main-background;
+}
+
+@media screen and (max-width: $medium-width) {
+  .questions-wrapper {
+    width: 100%;
+  }
+
+  .questions__form {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: $mobile-width) {
+  .questions {
+    background: #131313;
+  }
+
+  .questions-wrapper {
+    width: auto;
+    margin: 0 auto;
+    padding: 0 18px;
+  }
+
+  .questions__form {
+    width: auto;
+    padding-bottom: 40px;
+  }
+
+  .questions__data {
+    margin-bottom: 0;
+  }
+
+  .questions__name input,
+  .questions__phone input{
+    width: 339px;
+    margin-bottom: 63px;
+  }
+
+  .questions__main-checkbox {
+    top: 290px;
+    left: 33px;
+  }
+
+  .questions__form input[type="submit"] {
+    margin: 0 auto;
+    padding: 13px 74px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,149 @@
+.process {
+  background: #131313;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: #ffffff;
+  padding: 0 100px 93px;
+  width: auto;
+  margin-top: -80px;
+}
+
+.process__introduction {
+  font-family: $futura-demic;
+  font-size: 15px;
+  line-height: 21px;
+  text-transform: uppercase;
+  padding-bottom: 18px;
+}
+
+.process__header {
+  font-size: 27px;
+  line-height: 37px;
+  text-transform: uppercase;
+  font-family: $yeseva-one;
+  color: $main-background;
+  width: 161px;
+  margin-top: -10px;
+  margin-bottom: 92px;
+  position: relative;
+  &::after {
+    content:"";
+    width: 96px;
+    height: 2px;
+    background-color: $main-background;
+    position: absolute;
+    bottom: 15px;
+    right: -120px;
+  }
+}
+
+.process__step-header {
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  font-family: $yeseva-one;
+  font-size: 15px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: $main-background;
+}
+
+.process__step-header span {
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding-bottom: 16px;
+}
+
+.process__steps {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 65%;
+}
+
+.process__steps-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 80px;
+  width: 95%;
+}
+
+.process__steps-item {
+  width: 136px;
+  padding-right: 100px;
+  padding-bottom: 36px;
+  list-style: none;
+  opacity: 0.3;
+  &:nth-child(3n) {
+    padding-right: 0;
+  }
+  &--active,
+  &:hover {
+    opacity: 1.0;
+  }
+}
+
+.process__steps-number {
+  width: 20px;
+  margin: 0;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: $yeseva-one;
+  font-size: 15px;
+  line-height: 21px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #E3B873;
+}
+
+.process__steps-name {
+  font-family: $futura-book;
+  font-size: 15px;
+  line-height: 18px;
+  margin: 0;
+  font-weight: normal;
+}
+
+.process__steps img {
+  width: 95%;
+  height: auto;
+}
+
+.process__description {
+  position: relative;
+}
+
+.process__controls {
+  position: absolute;
+  bottom: 80px;
+  left: 0;
+}
+
+.process__step-description {
+  font-family: $futura-book;
+  font-size: 15px;
+  line-height: 25px;
+  width: 337px;
+}
+
+@media screen and (max-width: $medium-width) {
+  .process {
+    margin-top: 0;
+  }
+
+  .process__steps-item {
+    padding-right: 30px;
+    &:nth-child(3n) {
+      padding-right: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile-width) {
+  .process {
+    display: none;
+  }
+}

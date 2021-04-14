@@ -1,0 +1,170 @@
+.fantasy {
+  margin: 113px 0 42px;
+  padding: 0 102px 0 95px;
+  height: 864px;
+  background: url(../assets/images/fantasy-background.jpg);
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+}
+
+.fantasy__description {
+  font-family: $yeseva-one;
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: $main-background;
+  width: 290px;
+  padding: 137px 0 47px;
+  margin: 0;
+}
+
+.styles__list {
+  margin: 0;
+  padding: 0;
+}
+
+.styles__list li {
+  list-style: none;
+  padding-bottom: 17px;
+}
+
+.styles__item {
+  font-family: $proxima-nova;
+  font-size: 20px;
+  line-height: 34px;
+  color: #ffffff;
+  text-decoration: none;
+  &--active,
+  &:hover  {
+    text-decoration: underline;
+    color: $main-background;
+  }
+}
+
+.fantasy__images {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 70%;
+  float: right;
+  margin-top: -114px;
+  margin-bottom: -42px;
+}
+
+.fantasy__images-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-right: 20px;
+  width: 41%;
+}
+
+.fantasy__image {
+  &--1 {
+    padding-top: 73px;
+    width: 100%;
+    height: auto;
+  }
+  &--2 {
+    padding-top: 38px;
+    width: 100%;
+    height: auto;
+  }
+  &--3 {
+    padding-top: 0;
+    width: 100%;
+    height: auto;
+  }
+  &--4 {
+    padding-top: 38px;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: $mobile-width) {
+  .fantasy {
+    margin: 0;
+    padding: 0 18px;
+    height: 390px;
+    background: linear-gradient(to bottom, #fff 0%, #fff 213px, #131313 213px, #131313 100%);
+    display: block;
+    width: auto;
+  }
+
+  .fantasy__description {
+    font-size: 22px;
+    line-height: 30px;
+    width: 237px;
+    padding: 0 0 30px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .styles__list {
+    display: none;
+  }
+
+  .fantasy__images {
+    display: block;
+    width: auto;
+    float: none;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .fantasy__images-group {
+    display: block;
+  }
+
+  .fantasy__image {
+    &--1 {
+      padding-top: 0;
+      width: 340px;
+      height: 242px;
+    }
+    &--2 {
+      display: none;
+    }
+    &--3 {
+      display: none;
+    }
+    &--4 {
+      display: none;
+    }
+  }
+
+  .fantasy__images {
+    position: relative;
+  }
+
+  .fantasy__images::before {
+    content: "";
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    background: url(../assets/images/button-right.svg);
+    background-position: center;
+    border-radius: 50%;
+    left: 20px;
+    top: 110px;
+    z-index: 1;
+    transform: rotate(180deg);
+  }
+
+  .fantasy__images::after {
+    content: "";
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    background: url(../assets/images/button-right.svg);
+    background-position: center;
+    border-radius: 50%;
+    right: 20px;
+    top: 110px;
+    z-index: 1;
+  }
+}

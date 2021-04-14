@@ -1,0 +1,150 @@
+.consultation {
+  width: auto;
+  @include zero-space ();
+  padding-right: 98px;
+}
+
+.consultation__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.consultation__properties {
+  background: url(../assets/images/round.svg), url(../assets/images/properties.jpg);
+  background-size: 60%, 85%;
+  background-repeat: no-repeat;
+  background-position: left bottom, left top;
+  height: 635px;
+  width: 800px;
+}
+
+.consultation__properties-list {
+  list-style: none;
+  width: auto;
+  height: 100%;
+  position: relative;
+}
+
+.consultation__properties-item {
+  position: absolute;
+  display: block;
+  font-family: $futura-medium;
+  font-size: 18px;
+  line-height: 21px;
+  color: #363636;
+  &--1 {
+    width: 47%;
+    top: 80px;
+    left: 390px;
+  }
+  &--2 {
+    width: 130px;
+    top: 193px;
+    left: 455px;
+  }
+  &--3 {
+    width: 130px;
+    top: 345px;
+    left: 480px;
+  }
+  &--4 {
+    width: 230px;
+    top: 485px;
+    left: 420px;
+  }
+}
+
+.consultation__request {
+  margin-top: 65px;
+}
+
+.consultation__form-wrapper {
+  background-color: #131313;
+}
+
+.consultation__request-header {
+  padding: 28px 109px 45px;
+  margin: 0;
+  width: 290px;
+  color: #ffffff;
+  text-align: center;
+  font-family: $futura-demic;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.consultation__form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 40px;
+  position: relative;
+}
+
+.consultation__main-checkbox {
+  position: absolute;
+  bottom: 110px;
+  left: 70px;
+}
+
+.consultation__form label {
+  font-family: $futura-book;
+  font-size: 15px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.consultation__form input {
+  margin-bottom: 40px;
+  padding-bottom: 5px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  font-size: 18px;
+  line-height: 25px;
+  color: #ffffff;
+  &::placeholder {
+    color: #ffffff;
+  }
+}
+
+.consultation__form input[type="submit"] {
+  margin: 30px 0 22px auto;
+  width: 213px;
+  padding: 15px 40px;
+  font-family: $futura-demic;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: $main-background;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+}
+
+.consultation__bonus {
+  margin: 50px auto;
+  width: 230px;
+  font-family: $futura-demic;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+  color: #E3B873;
+  text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    background: url(../assets/images/pig.svg);
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    left: -100px;
+    top: -15px;
+  }
+}
+
+@media screen and (max-width: $medium-width) {
+  .consultation {
+    display: none;
+  }
+}

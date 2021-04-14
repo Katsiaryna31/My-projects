@@ -1,0 +1,14 @@
+{
+  "name": "normalize.scss",
+  "version": "0.1.0",
+  "styles": [
+    "normalize.scss"
+  ],
+  "author": [
+    "Nicolas Gallagher",
+    "Alex Guerrero"
+  ],
+  "license": "MIT",
+  "repository": "guerrero/normalize.scss",
+  "resolved": "d67d517e28615a873066438af1d4845c157c9baf"
+}

@@ -1,0 +1,42 @@
+.page-footer {
+  padding: 48px 82px;
+  background-color: #111111;
+  display: flex;
+  justify-content: space-between;
+  color: #ffffff;
+}
+
+.page-footer__logo {
+  text-decoration: none;
+  font-family: $futura-demic;
+  margin: 0;
+  padding: 10px 0;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+  &:hover,
+  &--active {
+    color: $main-background;
+  }
+}
+
+@media screen and (max-width: $medium-width) {
+  .page-footer {
+    padding: 23px 20px;
+  }
+
+  .page-footer__logo {
+    display: block;
+    width: 185px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+@media screen and (max-width: $mobile-width) {
+  .page-footer {
+    display: none;
+  }
+}

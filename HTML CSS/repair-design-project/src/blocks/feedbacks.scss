@@ -1,0 +1,142 @@
+.feedbacks {
+  padding: 0 100px 130px;
+}
+
+.feedbacks__header {
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 65px;
+  width: 257px;
+  font-family: $yeseva-one;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #181818;
+  position: relative;
+  &::after {
+    content: "";
+    width: 114px;
+    height: 28px;
+    background: url(../assets/images/clients.svg);
+    position: absolute;
+    top: 45px;
+    left: 75px;
+  }
+}
+
+.feedbacks__description {
+  width: 345px;
+  text-align: center;
+  margin: 0 auto;
+  font-family: $futura-book;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #363636;
+  padding-bottom: 39px;
+}
+
+.feedbacks__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.feedbacks__item {
+  list-style: none;
+  width: 330px;
+  padding: 43px 18px 95px;
+  margin-bottom: 10px;
+  position: relative;
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.feedbacks__name {
+  font-family: $yeseva-one;
+  font-size: 18px;
+  line-height: 23px;
+  color: #181818;
+  width: 178px;
+  margin: 0;
+  padding-left: 100px;
+  padding-bottom: 20px;
+}
+
+.feedbacks__photo {
+  position: absolute;
+  width: 76px;
+  height: 76px;
+  top: 27px;
+  left: 18px;
+}
+
+.feedbacks__details {
+  font-family: $futura-book;
+  font-size: 15px;
+  line-height: 27px;
+  color: #959595;
+  margin: 0;
+}
+
+.feedbacks__chracteristics {
+  display: flex;
+  justify-content: flex-start;
+  background: $main-background;
+  box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+  width: 294px;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.feedbacks__characteristics-square {
+  font-family: $yeseva-one;
+  font-size: 17px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 16px 14px 16px 65px;
+  margin: 0;
+  border-right: 1px solid #ffffff;
+  font-weight: bold;
+  position: relative;
+  &::before {
+    content:"";
+    width: 32.35px;
+    height: 31.35px;
+    position: absolute;
+    top: 13px;
+    left: 20px;
+    background: url(../assets/images/square.svg);
+  }
+}
+
+.feedbacks__characteristics-days {
+  font-family: $yeseva-one;
+  font-size: 17px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 16px 14px 16px 65px;
+  margin: 0;
+  font-weight: bold;
+  position: relative;
+  &::before {
+    content:"";
+    width: 32.78px;
+    height: 33px;
+    position: absolute;
+    top: 11px;
+    left: 20px;
+    background: url(../assets/images/days.svg);
+  }
+}
+
+@media screen and (max-width: $mobile-width) {
+  .feedbacks {
+    display: none;
+  }
+}
