@@ -1,0 +1,99 @@
+.developers-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex: 1 1 100%;
+  max-width: 1280px;
+  margin: auto;
+}
+
+.developer {
+  list-style-type: none;
+  width: 300px;
+  margin: 0 20px 20px 20px;
+}
+
+.developer-photo {
+  width: 300px;
+  height: 425px;
+  background-position: center !important;
+  background-size: cover !important;
+}
+
+.social-links {
+  width: 300px;
+  height: 57px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 1 100%;
+  margin: 5px 0 0 0;
+}
+
+ .developer-name {
+  user-select: none;
+  position: absolute;
+  width: 220px;
+  height: min-content;
+  padding-left: 10px;
+  padding-top: 330px;
+  margin: 0;
+  font-family: "Montserrat", "Arial", "sans-serif";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 33px;
+  line-height: 42px;
+  letter-spacing: 0.005em;
+  color: #F5F2EC;
+}
+
+.developer-contribution {
+  height: min-content;
+  text-align: left;
+  margin: 0;
+  font-family: "IBM Plex Sans", "Arial", "sans-serif";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 31px;
+  color: #000000;
+}
+
+.github, .telegram {
+  font-family: "IBM Plex Sans", "Arial", "sans-serif";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 31px;
+  text-decoration-line: underline;
+  color: #000000;
+}
+
+@media (max-width: 480px){
+  .developer {
+    width: 260px;
+    margin: 0 0 20px 0;
+  }
+
+  .developer-photo {
+    width: 250px;
+    height: 354px;
+  }
+
+  .social-links {
+    width: 250px;
+  }
+
+   .developer-name {
+    width: 150px;
+    padding-top: 275px;
+    font-size: 26px;
+    line-height: 36px;
+  }
+
+  .developer-contribution {
+    width: 250px;
+    font-size: 16px;
+    line-height: normal;
+  }
+}

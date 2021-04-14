@@ -1,0 +1,83 @@
+#popup-window {
+  width: 100%;
+  height: 100%;
+  background-color: #00000080;
+  overflow: hidden;
+  position: fixed;
+  margin: 0;
+  top: 0px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: none;
+  cursor: not-allowed;
+  align-items: center;
+  justify-content: center;
+}
+
+#video-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 817px;
+  height: 546px;
+  margin: 50px auto 0 auto;
+}
+
+#close-video {
+  width: min-content;
+  height: min-content;
+  padding: 5px 10px;
+  background-color: #F54D1C;
+  outline: none;
+  border: none;
+  user-select: none;
+  font-family: "IBM Plex Sans", "Arial", "sans-serif";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 31px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+#close-video:hover {
+  background-color: #f88a69;
+  font-family: "Montserrat", "Arial", "sans-serif";
+  color: #000000;
+}
+
+#director-video {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 960px){
+  #video-block {
+    width: 680px;
+    height: 467px;
+  }
+}
+
+@media (max-width: 780px){
+  #video-block {
+    width: 540px;
+    height: 387px;
+  }
+}
+
+@media (max-width: 640px){
+  #video-block {
+    width: 420px;
+    height: 318px;
+  }
+}
+
+@media (max-width: 480px){
+  #video-block {
+    width: 280px;
+    height: 249px;
+  }
+}
+
+

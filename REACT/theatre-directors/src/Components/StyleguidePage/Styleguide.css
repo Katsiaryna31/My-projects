@@ -1,0 +1,16 @@
+.styleguide {
+    margin-top: 175px;
+    height: 1800px;
+}
+
+@media (max-width: 950px) {
+    .styleguide {
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 384px) {
+    .styleguide {
+        height: 1900px;
+    }
+}

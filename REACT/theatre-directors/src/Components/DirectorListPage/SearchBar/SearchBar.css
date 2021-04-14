@@ -1,0 +1,38 @@
+.search-bar {
+	width: 100%;
+	height: 40px;
+	padding: 4px 50px;
+	margin-bottom: 40px;
+	border: 2px solid #F54D1C;
+	background: url('../../../Assets/Icons/search.svg');
+	background-repeat: no-repeat;
+	background-position: 4px;
+	background-size: contain;
+  outline: none;
+	box-sizing: border-box;
+	font-family: "IBM Plex Sans", "Arial", "sans-serif";
+	font-style: normal;
+	font-weight: 300;
+	font-size: 24px;
+	line-height: 31px;
+	color: #000000;
+	border-radius: 5px;
+}
+
+@media (max-width: 800px) {
+	.search-bar {
+		height: 30px;
+		margin-bottom: 20px;
+		font-size: 18px;
+	}
+
+}
+
+@media (max-width: 510px) {
+	.search-bar {
+		height: 20px;
+		margin-bottom: 10px;
+    font-size: 12px;
+	}
+
+}

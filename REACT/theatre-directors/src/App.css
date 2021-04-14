@@ -1,0 +1,328 @@
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: url('./Assets/Fonts/IBMPlexSans-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url('./Assets/Fonts/Montserrat-Black.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: url('./Assets/Fonts/IBMPlexSans-Bold.woff') format('woff');
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+#root {
+  background: #F5F2EC;
+}
+
+.App {
+  padding: 0 7%;
+  background: #F5F2EC;
+  overflow: hidden;
+}
+
+.header {
+  margin-bottom: 50px;
+  padding-top: 30px;
+}
+
+.row-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.logo {
+  margin: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+  font-family: "Montserrat", "Arial", "sans-serif";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 94px;
+  line-height: 90px;
+  color: #F54D1C;
+}
+
+.navigation {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.navigation a {
+  margin: 40px 0 0 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "IBM Plex Sans", "Arial", "sans-serif";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 31px;
+  color: #000000;
+}
+
+.column-1 a::after {
+  content: "\2192";
+  padding-left: 5px;
+  font-family: "IBM Plex Sans", "Arial", "sans-serif";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 31px;
+  color: #000000;
+}
+
+.column-2 a::after {
+  content: "\2192";
+  padding-left: 5px;
+  font-family: "IBM Plex Sans", "Arial", "sans-serif";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 31px;
+  color: #000000;
+}
+
+.active.active {
+  color: #F54D1C;
+}
+
+.active.active::after {
+  content: "";
+}
+
+.column-2,
+.column-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.column-1 {
+  margin-right: 25px;
+}
+
+.column-2 {
+  align-items: flex-end;
+}
+
+.switch-wrapper {
+  position: relative;
+}
+
+@media (max-width: 1600px) {
+
+  .header {
+    margin-bottom: 115px;
+  }
+
+  .logo {
+    font-size: 76px;
+    line-height: 78px;
+  }
+
+  .navigation a {
+    margin: 30px 0 0 60px;
+    font-size: 24px;
+    line-height: 23px;
+  }
+
+  .column-1 a::after {
+    font-size: 20px;
+  }
+
+  .column-2 a::after {
+    font-size: 20px;
+  }
+
+}
+
+@media (max-width: 1300px) {
+
+  .logo {
+    font-size: 68px;
+    line-height: 70px;
+  }
+
+  .navigation a {
+    margin: 30px 0 0 30px;
+    font-size: 20px;
+    line-height: 23px;
+  }
+}
+
+@media (max-width: 1100px) {
+
+  .header {
+    margin-bottom: 80px;
+  }
+
+  .logo {
+    width: 85%;
+    margin-bottom: 20px;
+    align-self: flex-start;
+    font-size: 94px;
+    line-height: 96px;
+  }
+
+  .navigation a {
+    margin: 39px 0 0 0px;
+    font-size: 28px;
+    line-height: 31px;
+  }
+
+  .column-1 a::after {
+    font-size: 28px;
+  }
+
+  .column-2 a::after {
+    font-size: 28px;
+  }
+
+  .column-1 {
+    margin-right: 140px;
+  }
+
+  .row-2 {
+    flex-direction: column;
+  }
+
+  .navigation {
+    align-self: flex-start;
+  }
+
+  .director-page {
+    margin-top: 95px;
+  }
+
+  .column-2 {
+    align-items: flex-start;
+  }
+
+}
+
+@media (max-width: 950px) {
+
+  .logo {
+    font-size: 80px;
+    line-height: 82px;
+  }
+
+  .navigation a {
+    margin: 25px 0 0 0px;
+  }
+
+  .column-1 {
+    margin-right: 80px;
+  }
+}
+
+
+@media (max-width: 670px) {
+
+  .logo {
+    font-size: 72px;
+    line-height: 74px;
+  }
+
+  .column-1 {
+    margin-right: 50px;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .header {
+    margin-bottom: 50px;
+}
+
+  .logo {
+    font-size: 58px;
+    line-height: 60px;
+  }
+
+  .navigation a {
+    margin: 20px 0 0 0px;
+    font-size: 22px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 560px) {
+
+  .logo {
+    font-size: 50px;
+    line-height: 52px;
+  }
+
+  .navigation a {
+    margin: 20px 0 0 0px;
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .column-1 a::after {
+    font-size: 18px;
+  }
+
+  .column-2 a::after {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 460px) {
+
+  .logo {
+    font-size: 46px;
+    line-height: 48px;
+  }
+
+  .column-1 {
+    margin-right: 30px;
+  }
+
+  .navigation a {
+    margin: 10px 0 0 0px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .column-1 a::after {
+    font-size: 14px;
+  }
+
+  .column-2 a::after {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 390px) {
+  .logo {
+    font-size: 36px;
+    line-height: 38px;
+  }
+
+  .navigation a {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}

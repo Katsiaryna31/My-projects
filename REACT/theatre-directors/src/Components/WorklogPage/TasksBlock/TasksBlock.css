@@ -1,0 +1,50 @@
+svg {
+  color: #F54D1C !important;
+}
+
+.self_evaluation_block-title {
+  font-family: "Montserrat", "Arial", "sans-serif";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 50px;
+  color: #F54D1C;
+  margin-bottom: 30px;
+}
+
+.self_evaluation_block-task-about {
+  font-family: "IBM Plex Sans", "Arial", "sans-serif";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 70px;
+  margin-top: 40px;
+  vertical-align: middle;
+}
+
+.MuiSvgIcon-root {
+  width: 1.5em !important;
+  height: 1.5em !important;
+}
+
+@media (max-width: 854px) {
+  .self_evaluation_block-title {
+    font-size: 30px;
+  }
+
+  .self_evaluation_block-task-about {
+    font-size: 15px;
+    line-height: 0px;
+  }
+}
+
+@media (max-width: 640px) {
+  .self_evaluation_block-title {
+    font-size: 20px;
+  }
+
+  .self_evaluation_block-task-about {
+    font-size: 13px;
+    line-height: 0px;
+  }
+}

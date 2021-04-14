@@ -1,0 +1,45 @@
+.director-biography {
+    width: 100%;
+    margin-top: 150px;
+}
+
+.timeline-title {
+    margin-bottom: 100px;
+    font-family: "Montserrat", "Arial", "sans-serif";
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 0.005em;
+    line-height: 50px;
+    color: #F54D1C;
+}
+
+.vertical-timeline-text {
+    font-weight: 300 !important;
+    font-size: 24px !important;
+    line-height: 31px !important;
+}
+
+.vertical-timeline-element-title {
+    font-family: "Montserrat", "Arial", "sans-serif";
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.vertical-timeline:before {
+    background-color: #F54D1C;
+    width: 2px;
+}
+
+@media (max-width: 854px) {
+    .vertical-timeline-text {
+      font-size: 15px !important;
+      line-height: 26px !important;
+    }
+
+    .timeline-title,
+    .vertical-timeline-element-title  {
+        font-size: 30px;
+        line-height: 44px;
+    }
+}

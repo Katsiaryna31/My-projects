@@ -1,0 +1,80 @@
+.text_styles_block {
+    margin-top: 150px;
+}
+
+.text_styles_block-title {
+    font-family: "Montserrat", "Arial", "sans-serif";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    color: #F54D1C;
+    margin-bottom: 50px;
+}
+
+.font_data_block {
+    height: 450px;
+}
+
+.font_data_block-h1,
+.font_data_block-h2,
+.font_data_block-h3 {
+    font-family: "Montserrat", "Arial", "sans-serif";
+    font-style: normal;
+    font-weight: 900;
+    line-height: 90px;
+    margin: auto !important;
+}
+
+.text_info,
+.font_data_block-body {
+    font-family: "IBM Plex Sans", "Arial", "sans-serif";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 31px;
+    margin: auto !important;
+}
+
+.font_data_block-h1 {
+    font-size: 100px;
+}
+
+.font_data_block-h2 {
+    font-size: 72px;
+}
+
+.font_data_block-h3 {
+    font-size: 40px;
+}
+
+@media (max-width: 854px) {
+    .font_data_block-h1 {
+        font-size: 80px;
+    }
+
+    .font_data_block-h2 {
+        font-size: 60px;
+    }
+
+    .font_data_block-h3 {
+        font-size: 30px;
+    }
+
+    .text_info,
+    .font_data_block-h1,
+    .font_data_block-h2,
+    .font_data_block-h3,
+    .font_data_block-body {
+        max-width: 100% !important;
+        flex-basis: 100% !important;
+    }
+
+    .font_data_block-h3 {
+        line-height: 80px;
+    }
+
+    .font_data_block-body {
+        line-height: 80px;
+        font-size: 15px;
+    }
+}

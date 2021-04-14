@@ -1,0 +1,33 @@
+.worklog {
+    height: 6200px;
+}
+
+@media (max-width: 1024px) {
+    .worklog {
+        height: 6500px;
+    }
+}
+
+@media (max-width: 854px) {
+    .worklog {
+        height: 5000px;
+    }
+}
+
+@media (max-width: 768px) {
+    .worklog {
+        height: 5300px;
+    }
+}
+
+@media (max-width: 640px) {
+    .worklog {
+        height: 5400px;
+    }
+}
+
+@media (max-width: 480px) {
+    .worklog {
+        height: 5800px;
+    }
+}

@@ -1,0 +1,42 @@
+.feature_block-title {
+  font-family: "Montserrat", "Arial", "sans-serif";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 50px;
+    color: #F54D1C;
+}
+
+
+.feature_block-feature {
+  font-family: "IBM Plex Sans", "Arial", "sans-serif";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 31px;
+    margin-top: 40px;
+}
+
+
+@media (max-width: 1024px) {
+    .feature_block-title,
+    .feature_block-feature {
+        max-width: 62% !important;
+        flex-basis: 62% !important;
+    }
+}
+
+
+@media (max-width: 854px) {
+    .feature_block-title {
+        font-size: 30px;
+        max-width: 70% !important;
+        flex-basis: 70% !important;
+    }
+
+    .feature_block-feature {
+        font-size: 15px;
+        max-width: 70% !important;
+        flex-basis: 70% !important;
+    }
+}

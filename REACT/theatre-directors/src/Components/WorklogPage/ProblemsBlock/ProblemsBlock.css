@@ -1,0 +1,45 @@
+.problems_block {
+    margin-top: 10%;
+}
+
+.problems_block-title {
+    font-family: "Montserrat", "Arial", "sans-serif";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 50px;
+    color: #F54D1C;
+    margin-bottom: 2%;
+}
+
+.problems_block-about {
+    font-family: "IBM Plex Sans", "Arial", "sans-serif";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 50px;
+    vertical-align: middle;
+    margin-bottom: 2%;
+}
+
+@media (max-width: 854px) {
+    .problems_block-title {
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+
+    .problems_block-about {
+        font-size: 15px;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 640px) {
+    .problems_block-title {
+        font-size: 20px;
+    }
+
+    .problems_block-about {
+        font-size: 13px;
+    }
+}

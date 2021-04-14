@@ -1,0 +1,14 @@
+.director-page {
+    margin-top: 157px;
+    font-family: "IBM Plex Sans", "Arial", "sans-serif";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+@media (max-width: 854px) {
+    .director-page {
+       margin-top: 100px;
+    }
+  }
